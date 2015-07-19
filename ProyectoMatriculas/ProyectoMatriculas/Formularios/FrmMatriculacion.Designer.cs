@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.gbx_info_mat = new System.Windows.Forms.GroupBox();
+            this.TxtCedula = new System.Windows.Forms.TextBox();
+            this.TxtNumMatricula = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.CmbCurso = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.TxtFecha = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TxtNumMatricula = new System.Windows.Forms.TextBox();
-            this.TxtCedula = new System.Windows.Forms.TextBox();
             this.BtnNuevo = new System.Windows.Forms.Button();
             this.gbx_busq_est = new System.Windows.Forms.GroupBox();
+            this.TxtTelefono = new System.Windows.Forms.TextBox();
+            this.TxtDireccion = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.TxtApellido = new System.Windows.Forms.TextBox();
             this.Label5 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TxtDireccion = new System.Windows.Forms.TextBox();
-            this.TxtTelefono = new System.Windows.Forms.TextBox();
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.DgvMatricula = new System.Windows.Forms.DataGridView();
             this.gbx_info_mat.SuspendLayout();
@@ -66,23 +66,55 @@
             this.gbx_info_mat.Controls.Add(this.TxtFecha);
             this.gbx_info_mat.Location = new System.Drawing.Point(12, 12);
             this.gbx_info_mat.Name = "gbx_info_mat";
-            this.gbx_info_mat.Size = new System.Drawing.Size(311, 194);
+            this.gbx_info_mat.Size = new System.Drawing.Size(404, 194);
             this.gbx_info_mat.TabIndex = 1108;
             this.gbx_info_mat.TabStop = false;
             this.gbx_info_mat.Text = "Datos de Matrícula";
             // 
+            // TxtCedula
+            // 
+            this.TxtCedula.Location = new System.Drawing.Point(83, 68);
+            this.TxtCedula.Name = "TxtCedula";
+            this.TxtCedula.Size = new System.Drawing.Size(315, 20);
+            this.TxtCedula.TabIndex = 1105;
+            // 
+            // TxtNumMatricula
+            // 
+            this.TxtNumMatricula.Location = new System.Drawing.Point(83, 34);
+            this.TxtNumMatricula.Name = "TxtNumMatricula";
+            this.TxtNumMatricula.Size = new System.Drawing.Size(315, 20);
+            this.TxtNumMatricula.TabIndex = 1104;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(11, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.TabIndex = 1103;
+            this.label2.Text = "Nº Matricula:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(11, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 1102;
+            this.label1.Text = "Cedula:";
+            // 
             // CmbCurso
             // 
             this.CmbCurso.FormattingEnabled = true;
-            this.CmbCurso.Location = new System.Drawing.Point(83, 103);
+            this.CmbCurso.Location = new System.Drawing.Point(83, 100);
             this.CmbCurso.Name = "CmbCurso";
-            this.CmbCurso.Size = new System.Drawing.Size(183, 21);
+            this.CmbCurso.Size = new System.Drawing.Size(315, 21);
             this.CmbCurso.TabIndex = 1097;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 103);
+            this.label8.Location = new System.Drawing.Point(10, 101);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(37, 13);
             this.label8.TabIndex = 1090;
@@ -91,7 +123,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 150);
+            this.label7.Location = new System.Drawing.Point(11, 139);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 13);
             this.label7.TabIndex = 1096;
@@ -100,42 +132,10 @@
             // TxtFecha
             // 
             this.TxtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.TxtFecha.Location = new System.Drawing.Point(85, 144);
+            this.TxtFecha.Location = new System.Drawing.Point(83, 136);
             this.TxtFecha.Name = "TxtFecha";
             this.TxtFecha.Size = new System.Drawing.Size(183, 20);
             this.TxtFecha.TabIndex = 1095;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 1102;
-            this.label1.Text = "Cedula:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
-            this.label2.TabIndex = 1103;
-            this.label2.Text = "Nº Matricula";
-            // 
-            // TxtNumMatricula
-            // 
-            this.TxtNumMatricula.Location = new System.Drawing.Point(83, 34);
-            this.TxtNumMatricula.Name = "TxtNumMatricula";
-            this.TxtNumMatricula.Size = new System.Drawing.Size(185, 20);
-            this.TxtNumMatricula.TabIndex = 1104;
-            // 
-            // TxtCedula
-            // 
-            this.TxtCedula.Location = new System.Drawing.Point(83, 70);
-            this.TxtCedula.Name = "TxtCedula";
-            this.TxtCedula.Size = new System.Drawing.Size(183, 20);
-            this.TxtCedula.TabIndex = 1105;
             // 
             // BtnNuevo
             // 
@@ -156,26 +156,58 @@
             this.gbx_busq_est.Controls.Add(this.Label5);
             this.gbx_busq_est.Controls.Add(this.TxtNombre);
             this.gbx_busq_est.Controls.Add(this.label4);
-            this.gbx_busq_est.Location = new System.Drawing.Point(329, 12);
+            this.gbx_busq_est.Location = new System.Drawing.Point(422, 12);
             this.gbx_busq_est.Name = "gbx_busq_est";
-            this.gbx_busq_est.Size = new System.Drawing.Size(324, 194);
+            this.gbx_busq_est.Size = new System.Drawing.Size(416, 194);
             this.gbx_busq_est.TabIndex = 1110;
             this.gbx_busq_est.TabStop = false;
             this.gbx_busq_est.Text = "Búsqueda de Estudiantes";
             // 
+            // TxtTelefono
+            // 
+            this.TxtTelefono.Location = new System.Drawing.Point(73, 134);
+            this.TxtTelefono.Name = "TxtTelefono";
+            this.TxtTelefono.Size = new System.Drawing.Size(136, 20);
+            this.TxtTelefono.TabIndex = 1093;
+            // 
+            // TxtDireccion
+            // 
+            this.TxtDireccion.Location = new System.Drawing.Point(73, 100);
+            this.TxtDireccion.Name = "TxtDireccion";
+            this.TxtDireccion.Size = new System.Drawing.Size(337, 20);
+            this.TxtDireccion.TabIndex = 1092;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 137);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 13);
+            this.label6.TabIndex = 1091;
+            this.label6.Text = "Telefono:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 104);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.TabIndex = 1090;
+            this.label3.Text = "Direccion:";
+            // 
             // TxtApellido
             // 
             this.TxtApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtApellido.Location = new System.Drawing.Point(73, 70);
+            this.TxtApellido.Location = new System.Drawing.Point(73, 65);
             this.TxtApellido.MaxLength = 40;
             this.TxtApellido.Name = "TxtApellido";
-            this.TxtApellido.Size = new System.Drawing.Size(211, 20);
+            this.TxtApellido.Size = new System.Drawing.Size(337, 20);
             this.TxtApellido.TabIndex = 1085;
             // 
             // Label5
             // 
             this.Label5.AutoSize = true;
-            this.Label5.Location = new System.Drawing.Point(8, 73);
+            this.Label5.Location = new System.Drawing.Point(8, 68);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(47, 13);
             this.Label5.TabIndex = 1089;
@@ -187,7 +219,7 @@
             this.TxtNombre.Location = new System.Drawing.Point(73, 34);
             this.TxtNombre.MaxLength = 40;
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(211, 20);
+            this.TxtNombre.Size = new System.Drawing.Size(337, 20);
             this.TxtNombre.TabIndex = 1084;
             // 
             // label4
@@ -198,38 +230,6 @@
             this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 1087;
             this.label4.Text = "Nombre:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 111);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 1090;
-            this.label3.Text = "Direccion:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 151);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 13);
-            this.label6.TabIndex = 1091;
-            this.label6.Text = "Telefono:";
-            // 
-            // TxtDireccion
-            // 
-            this.TxtDireccion.Location = new System.Drawing.Point(73, 111);
-            this.TxtDireccion.Name = "TxtDireccion";
-            this.TxtDireccion.Size = new System.Drawing.Size(211, 20);
-            this.TxtDireccion.TabIndex = 1092;
-            // 
-            // TxtTelefono
-            // 
-            this.TxtTelefono.Location = new System.Drawing.Point(73, 150);
-            this.TxtTelefono.Name = "TxtTelefono";
-            this.TxtTelefono.Size = new System.Drawing.Size(136, 20);
-            this.TxtTelefono.TabIndex = 1093;
             // 
             // BtnGuardar
             // 
@@ -245,14 +245,14 @@
             this.DgvMatricula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvMatricula.Location = new System.Drawing.Point(13, 242);
             this.DgvMatricula.Name = "DgvMatricula";
-            this.DgvMatricula.Size = new System.Drawing.Size(640, 150);
+            this.DgvMatricula.Size = new System.Drawing.Size(825, 150);
             this.DgvMatricula.TabIndex = 1112;
             // 
             // FrmMatriculacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 393);
+            this.ClientSize = new System.Drawing.Size(847, 393);
             this.Controls.Add(this.DgvMatricula);
             this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.gbx_busq_est);
