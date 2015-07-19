@@ -30,7 +30,7 @@
         {
             this.gbx_estudiante = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.TxtFecha = new System.Windows.Forms.DateTimePicker();
+            this.DTFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.TxtTelefono = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TxtDireccion = new System.Windows.Forms.TextBox();
@@ -52,7 +52,7 @@
             // gbx_estudiante
             // 
             this.gbx_estudiante.Controls.Add(this.label7);
-            this.gbx_estudiante.Controls.Add(this.TxtFecha);
+            this.gbx_estudiante.Controls.Add(this.DTFechaNacimiento);
             this.gbx_estudiante.Controls.Add(this.TxtTelefono);
             this.gbx_estudiante.Controls.Add(this.label3);
             this.gbx_estudiante.Controls.Add(this.TxtDireccion);
@@ -80,13 +80,13 @@
             this.label7.TabIndex = 1096;
             this.label7.Text = "Fecha Nacimiento:";
             // 
-            // TxtFecha
+            // DTFechaNacimiento
             // 
-            this.TxtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.TxtFecha.Location = new System.Drawing.Point(450, 123);
-            this.TxtFecha.Name = "TxtFecha";
-            this.TxtFecha.Size = new System.Drawing.Size(160, 20);
-            this.TxtFecha.TabIndex = 1095;
+            this.DTFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DTFechaNacimiento.Location = new System.Drawing.Point(450, 123);
+            this.DTFechaNacimiento.Name = "DTFechaNacimiento";
+            this.DTFechaNacimiento.Size = new System.Drawing.Size(160, 20);
+            this.DTFechaNacimiento.TabIndex = 1095;
             // 
             // TxtTelefono
             // 
@@ -195,6 +195,7 @@
             this.BtnGuardar.TabIndex = 1088;
             this.BtnGuardar.Text = "Guadar";
             this.BtnGuardar.UseVisualStyleBackColor = true;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // BtnModificar
             // 
@@ -239,7 +240,7 @@
 
         private System.Windows.Forms.GroupBox gbx_estudiante;
         internal System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker TxtFecha;
+        private System.Windows.Forms.DateTimePicker DTFechaNacimiento;
         internal System.Windows.Forms.TextBox TxtTelefono;
         internal System.Windows.Forms.Label label3;
         internal System.Windows.Forms.TextBox TxtDireccion;

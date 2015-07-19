@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.MenuPrincipal = new System.Windows.Forms.MenuStrip();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PanContenedorFormularios = new System.Windows.Forms.Panel();
             this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarAlumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PanContenedorFormularios = new System.Windows.Forms.Panel();
             this.MenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,23 +46,6 @@
             this.MenuPrincipal.Size = new System.Drawing.Size(943, 24);
             this.MenuPrincipal.TabIndex = 1;
             this.MenuPrincipal.Text = "menuStrip1";
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
-            // PanContenedorFormularios
-            // 
-            this.PanContenedorFormularios.BackgroundImage = global::ProyectoMatriculas.Properties.Resources.o_COLLEGE_facebook;
-            this.PanContenedorFormularios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PanContenedorFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanContenedorFormularios.Location = new System.Drawing.Point(0, 24);
-            this.PanContenedorFormularios.Name = "PanContenedorFormularios";
-            this.PanContenedorFormularios.Size = new System.Drawing.Size(943, 508);
-            this.PanContenedorFormularios.TabIndex = 2;
             // 
             // alumnosToolStripMenuItem
             // 
@@ -78,6 +61,22 @@
             this.registrarAlumnosToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.registrarAlumnosToolStripMenuItem.Text = "Registrar alumnos";
             this.registrarAlumnosToolStripMenuItem.Click += new System.EventHandler(this.registrarAlumnosToolStripMenuItem_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // PanContenedorFormularios
+            // 
+            this.PanContenedorFormularios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PanContenedorFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanContenedorFormularios.Location = new System.Drawing.Point(0, 24);
+            this.PanContenedorFormularios.Name = "PanContenedorFormularios";
+            this.PanContenedorFormularios.Size = new System.Drawing.Size(943, 508);
+            this.PanContenedorFormularios.TabIndex = 2;
             // 
             // Form1
             // 

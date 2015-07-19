@@ -144,18 +144,18 @@ namespace ProyectoMatriculas.Clases
         {
             Int32 CantidadRegistroAfectados = 0;
 
-            try
-            {
+            //try
+            //{
                 ComandoSQL.CommandTimeout = 0;
                 CantidadRegistroAfectados = ComandoSQL.ExecuteNonQuery();
                 DesconectarDeBase();
                 return CantidadRegistroAfectados;
-            }
-            catch (Exception Ex)
-            {
-                DesconectarDeBase();
-                return CantidadRegistroAfectados;
-            }
+            //}
+            //catch (Exception Ex)
+            //{
+                //DesconectarDeBase();
+                //return CantidadRegistroAfectados;
+            //}
         }
 
         /// <summary>

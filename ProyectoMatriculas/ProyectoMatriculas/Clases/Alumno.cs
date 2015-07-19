@@ -159,6 +159,70 @@ namespace ProyectoMatriculas.Clases
 
         #endregion
 
+        #region :: Validación Cédula ::
+
+        /// <summary>
+        /// Valida un número de cédula ingresado
+        /// </summary>
+        public Boolean ValidarCedula(string NumeroCedula)
+        {
+            int[] VectorCedula = new int[10]; int SumaPares = 0; int SumaImpares = 0;
+            int SumaTotal = 0; int DigitoValidador = 0; int DecenaSuperior = 0; int Resultado = 0;
+            if (NumeroCedula.Length != 10)
+            {
+                return false;
+            }
+            else
+            {
+                if (Convert.ToInt16(NumeroCedula.Substring(0, 2)) < 1 | Convert.ToInt16(NumeroCedula.Substring(0, 2)) > 24)
+                {
+                    return false;
+                }
+                else
+                {
+                    for (int cont = 0; cont < NumeroCedula.Length; cont++)//Obtengo los dígitos del número de cédula
+                    {
+                        VectorCedula[cont] = Convert.ToInt16(NumeroCedula.Substring(cont, 1));
+                    }
+                    DigitoValidador = VectorCedula[NumeroCedula.Length - 1];
+                    for (int cont = 0; cont < NumeroCedula.Length; cont += 2)//Sumo los duplos de las posiciones impares del número de cédula
+                    {
+                        VectorCedula[cont] = VectorCedula[cont] * 2;
+                        if (VectorCedula[cont] > 9)
+                        {
+                            VectorCedula[cont] = VectorCedula[cont] - 9;//Si el duplo del dígito supera 9 se resta 9
+                        }
+                        SumaImpares = SumaImpares + VectorCedula[cont];
+                    }
+                    for (int cont = 1; cont < NumeroCedula.Length - 1; cont += 2)//Sumo las posiciones pares
+                    {
+                        SumaPares = SumaPares + VectorCedula[cont];
+                    }
+                    SumaTotal = SumaImpares + SumaPares;//Sumo los resultados pares e impares
+                    if (SumaTotal <= 10)
+                    {
+                        DecenaSuperior = 10;
+                    }
+                    else
+                    {
+                        DecenaSuperior = (Convert.ToInt16(SumaTotal.ToString().Substring(0, 1)) + 1) * 10;//Obtengo la decena superior
+                    }
+                    Resultado = DecenaSuperior - SumaTotal;//Resto de la decena superior
+                    if (Resultado == 10)//Si el resultado se la resta es 10 el dígito final es 0
+                    {
+                        Resultado = 0;
+                    }
+
+                    if (Resultado == DigitoValidador)
+                        return true;//Cedula valida
+                    else
+                        return false;//Cedula no valida
+                }
+            }
+        }
+
+        #endregion
+
         #endregion
     }
 }
