@@ -92,7 +92,7 @@
             // 
             this.TxtTelefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtTelefono.Location = new System.Drawing.Point(109, 123);
-            this.TxtTelefono.MaxLength = 15;
+            this.TxtTelefono.MaxLength = 50;
             this.TxtTelefono.Name = "TxtTelefono";
             this.TxtTelefono.Size = new System.Drawing.Size(197, 20);
             this.TxtTelefono.TabIndex = 1092;
@@ -110,7 +110,7 @@
             // 
             this.TxtDireccion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtDireccion.Location = new System.Drawing.Point(109, 97);
-            this.TxtDireccion.MaxLength = 40;
+            this.TxtDireccion.MaxLength = 50;
             this.TxtDireccion.Name = "TxtDireccion";
             this.TxtDireccion.Size = new System.Drawing.Size(501, 20);
             this.TxtDireccion.TabIndex = 1091;
@@ -137,7 +137,7 @@
             // 
             this.TxtCedula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtCedula.Location = new System.Drawing.Point(109, 19);
-            this.TxtCedula.MaxLength = 20;
+            this.TxtCedula.MaxLength = 10;
             this.TxtCedula.Name = "TxtCedula";
             this.TxtCedula.Size = new System.Drawing.Size(197, 20);
             this.TxtCedula.TabIndex = 1083;
@@ -155,7 +155,7 @@
             // 
             this.TxtApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtApellido.Location = new System.Drawing.Point(109, 71);
-            this.TxtApellido.MaxLength = 40;
+            this.TxtApellido.MaxLength = 50;
             this.TxtApellido.Name = "TxtApellido";
             this.TxtApellido.Size = new System.Drawing.Size(501, 20);
             this.TxtApellido.TabIndex = 1085;
@@ -173,7 +173,7 @@
             // 
             this.TxtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtNombre.Location = new System.Drawing.Point(109, 45);
-            this.TxtNombre.MaxLength = 40;
+            this.TxtNombre.MaxLength = 50;
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(501, 20);
             this.TxtNombre.TabIndex = 1084;
