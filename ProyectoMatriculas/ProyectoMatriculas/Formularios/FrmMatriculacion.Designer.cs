@@ -252,13 +252,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 393);
+            this.ClientSize = new System.Drawing.Size(665, 393);
             this.Controls.Add(this.DgvMatricula);
             this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.gbx_busq_est);
             this.Controls.Add(this.BtnNuevo);
             this.Controls.Add(this.gbx_info_mat);
             this.Name = "FrmMatriculacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMatriculacion";
             this.gbx_info_mat.ResumeLayout(false);
             this.gbx_info_mat.PerformLayout();
