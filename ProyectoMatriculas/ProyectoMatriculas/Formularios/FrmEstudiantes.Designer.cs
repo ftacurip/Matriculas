@@ -43,7 +43,6 @@
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.BtnNuevo = new System.Windows.Forms.Button();
             this.BtnGuardar = new System.Windows.Forms.Button();
-            this.BtnModificar = new System.Windows.Forms.Button();
             this.DgvEstudiante = new System.Windows.Forms.DataGridView();
             this.gbx_estudiante.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvEstudiante)).BeginInit();
@@ -110,7 +109,7 @@
             // 
             this.TxtDireccion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtDireccion.Location = new System.Drawing.Point(109, 97);
-            this.TxtDireccion.MaxLength = 50;
+            this.TxtDireccion.MaxLength = 150;
             this.TxtDireccion.Name = "TxtDireccion";
             this.TxtDireccion.Size = new System.Drawing.Size(501, 20);
             this.TxtDireccion.TabIndex = 1091;
@@ -155,7 +154,7 @@
             // 
             this.TxtApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtApellido.Location = new System.Drawing.Point(109, 71);
-            this.TxtApellido.MaxLength = 50;
+            this.TxtApellido.MaxLength = 100;
             this.TxtApellido.Name = "TxtApellido";
             this.TxtApellido.Size = new System.Drawing.Size(501, 20);
             this.TxtApellido.TabIndex = 1085;
@@ -173,7 +172,7 @@
             // 
             this.TxtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtNombre.Location = new System.Drawing.Point(109, 45);
-            this.TxtNombre.MaxLength = 50;
+            this.TxtNombre.MaxLength = 100;
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(501, 20);
             this.TxtNombre.TabIndex = 1084;
@@ -186,6 +185,7 @@
             this.BtnNuevo.TabIndex = 1087;
             this.BtnNuevo.Text = "Nuevo";
             this.BtnNuevo.UseVisualStyleBackColor = true;
+            this.BtnNuevo.Click += new System.EventHandler(this.BtnNuevo_Click);
             // 
             // BtnGuardar
             // 
@@ -197,22 +197,17 @@
             this.BtnGuardar.UseVisualStyleBackColor = true;
             this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
-            // BtnModificar
-            // 
-            this.BtnModificar.Location = new System.Drawing.Point(174, 171);
-            this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(75, 23);
-            this.BtnModificar.TabIndex = 1090;
-            this.BtnModificar.Text = "Modificar";
-            this.BtnModificar.UseVisualStyleBackColor = true;
-            // 
             // DgvEstudiante
             // 
+            this.DgvEstudiante.AllowUserToAddRows = false;
+            this.DgvEstudiante.AllowUserToDeleteRows = false;
             this.DgvEstudiante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvEstudiante.Location = new System.Drawing.Point(12, 200);
             this.DgvEstudiante.Name = "DgvEstudiante";
+            this.DgvEstudiante.ReadOnly = true;
             this.DgvEstudiante.Size = new System.Drawing.Size(616, 182);
             this.DgvEstudiante.TabIndex = 1091;
+            this.DgvEstudiante.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvEstudiante_CellContentClick);
             // 
             // FrmEstudiantes
             // 
@@ -220,7 +215,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(639, 392);
             this.Controls.Add(this.DgvEstudiante);
-            this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.BtnNuevo);
             this.Controls.Add(this.gbx_estudiante);
@@ -229,6 +223,7 @@
             this.Name = "FrmEstudiantes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de estudiantes";
+            this.Load += new System.EventHandler(this.FrmEstudiantes_Load);
             this.gbx_estudiante.ResumeLayout(false);
             this.gbx_estudiante.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvEstudiante)).EndInit();
@@ -253,7 +248,6 @@
         internal System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.Button BtnNuevo;
         private System.Windows.Forms.Button BtnGuardar;
-        private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.DataGridView DgvEstudiante;
     }
 }

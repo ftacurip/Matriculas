@@ -52,25 +52,26 @@
             this.alumnosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registrarAlumnosToolStripMenuItem});
             this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
-            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.alumnosToolStripMenuItem.Text = "Alumnos";
             // 
             // registrarAlumnosToolStripMenuItem
             // 
             this.registrarAlumnosToolStripMenuItem.Name = "registrarAlumnosToolStripMenuItem";
-            this.registrarAlumnosToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.registrarAlumnosToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.registrarAlumnosToolStripMenuItem.Text = "Registrar alumnos";
             this.registrarAlumnosToolStripMenuItem.Click += new System.EventHandler(this.registrarAlumnosToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // PanContenedorFormularios
             // 
+            this.PanContenedorFormularios.BackgroundImage = global::ProyectoMatriculas.Properties.Resources.o_COLLEGE_facebook;
             this.PanContenedorFormularios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PanContenedorFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanContenedorFormularios.Location = new System.Drawing.Point(0, 24);
