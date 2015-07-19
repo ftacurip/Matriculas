@@ -43,7 +43,6 @@
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.BtnNuevo = new System.Windows.Forms.Button();
             this.BtnGuardar = new System.Windows.Forms.Button();
-            this.BtnEliminar = new System.Windows.Forms.Button();
             this.BtnModificar = new System.Windows.Forms.Button();
             this.DgvEstudiante = new System.Windows.Forms.DataGridView();
             this.gbx_estudiante.SuspendLayout();
@@ -64,9 +63,9 @@
             this.gbx_estudiante.Controls.Add(this.TxtApellido);
             this.gbx_estudiante.Controls.Add(this.Label5);
             this.gbx_estudiante.Controls.Add(this.TxtNombre);
-            this.gbx_estudiante.Location = new System.Drawing.Point(12, 21);
+            this.gbx_estudiante.Location = new System.Drawing.Point(12, 12);
             this.gbx_estudiante.Name = "gbx_estudiante";
-            this.gbx_estudiante.Size = new System.Drawing.Size(616, 142);
+            this.gbx_estudiante.Size = new System.Drawing.Size(616, 153);
             this.gbx_estudiante.TabIndex = 1086;
             this.gbx_estudiante.TabStop = false;
             this.gbx_estudiante.Text = "Información del Estudiante";
@@ -75,16 +74,16 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(323, 97);
+            this.label7.Location = new System.Drawing.Point(348, 126);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 13);
+            this.label7.Size = new System.Drawing.Size(96, 13);
             this.label7.TabIndex = 1096;
-            this.label7.Text = "FECHA NACIMIENTO:";
+            this.label7.Text = "Fecha Nacimiento:";
             // 
             // TxtFecha
             // 
             this.TxtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.TxtFecha.Location = new System.Drawing.Point(435, 91);
+            this.TxtFecha.Location = new System.Drawing.Point(450, 123);
             this.TxtFecha.Name = "TxtFecha";
             this.TxtFecha.Size = new System.Drawing.Size(160, 20);
             this.TxtFecha.TabIndex = 1095;
@@ -92,7 +91,7 @@
             // TxtTelefono
             // 
             this.TxtTelefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtTelefono.Location = new System.Drawing.Point(398, 60);
+            this.TxtTelefono.Location = new System.Drawing.Point(109, 123);
             this.TxtTelefono.MaxLength = 15;
             this.TxtTelefono.Name = "TxtTelefono";
             this.TxtTelefono.Size = new System.Drawing.Size(197, 20);
@@ -101,34 +100,34 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(323, 60);
+            this.label3.Location = new System.Drawing.Point(8, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 13);
+            this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 1093;
-            this.label3.Text = "TELEFONO:";
+            this.label3.Text = "Teléfono:";
             // 
             // TxtDireccion
             // 
             this.TxtDireccion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtDireccion.Location = new System.Drawing.Point(398, 23);
+            this.TxtDireccion.Location = new System.Drawing.Point(109, 97);
             this.TxtDireccion.MaxLength = 40;
             this.TxtDireccion.Name = "TxtDireccion";
-            this.TxtDireccion.Size = new System.Drawing.Size(197, 20);
+            this.TxtDireccion.Size = new System.Drawing.Size(501, 20);
             this.TxtDireccion.TabIndex = 1091;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(323, 26);
+            this.label6.Location = new System.Drawing.Point(8, 100);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 13);
+            this.label6.Size = new System.Drawing.Size(55, 13);
             this.label6.TabIndex = 1094;
-            this.label6.Text = "DIRECCION:";
+            this.label6.Text = "Dirección:";
             // 
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(8, 26);
+            this.Label1.Location = new System.Drawing.Point(8, 22);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(58, 13);
             this.Label1.TabIndex = 1090;
@@ -137,7 +136,7 @@
             // TxtCedula
             // 
             this.TxtCedula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtCedula.Location = new System.Drawing.Point(109, 23);
+            this.TxtCedula.Location = new System.Drawing.Point(109, 19);
             this.TxtCedula.MaxLength = 20;
             this.TxtCedula.Name = "TxtCedula";
             this.TxtCedula.Size = new System.Drawing.Size(197, 20);
@@ -146,7 +145,7 @@
             // Label2
             // 
             this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(8, 57);
+            this.Label2.Location = new System.Drawing.Point(8, 48);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(47, 13);
             this.Label2.TabIndex = 1087;
@@ -155,16 +154,16 @@
             // TxtApellido
             // 
             this.TxtApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtApellido.Location = new System.Drawing.Point(109, 90);
+            this.TxtApellido.Location = new System.Drawing.Point(109, 71);
             this.TxtApellido.MaxLength = 40;
             this.TxtApellido.Name = "TxtApellido";
-            this.TxtApellido.Size = new System.Drawing.Size(197, 20);
+            this.TxtApellido.Size = new System.Drawing.Size(501, 20);
             this.TxtApellido.TabIndex = 1085;
             // 
             // Label5
             // 
             this.Label5.AutoSize = true;
-            this.Label5.Location = new System.Drawing.Point(8, 90);
+            this.Label5.Location = new System.Drawing.Point(8, 74);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(47, 13);
             this.Label5.TabIndex = 1089;
@@ -173,15 +172,15 @@
             // TxtNombre
             // 
             this.TxtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtNombre.Location = new System.Drawing.Point(109, 57);
+            this.TxtNombre.Location = new System.Drawing.Point(109, 45);
             this.TxtNombre.MaxLength = 40;
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(197, 20);
+            this.TxtNombre.Size = new System.Drawing.Size(501, 20);
             this.TxtNombre.TabIndex = 1084;
             // 
             // BtnNuevo
             // 
-            this.BtnNuevo.Location = new System.Drawing.Point(13, 170);
+            this.BtnNuevo.Location = new System.Drawing.Point(12, 171);
             this.BtnNuevo.Name = "BtnNuevo";
             this.BtnNuevo.Size = new System.Drawing.Size(75, 23);
             this.BtnNuevo.TabIndex = 1087;
@@ -190,25 +189,16 @@
             // 
             // BtnGuardar
             // 
-            this.BtnGuardar.Location = new System.Drawing.Point(95, 170);
+            this.BtnGuardar.Location = new System.Drawing.Point(93, 171);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(75, 23);
             this.BtnGuardar.TabIndex = 1088;
             this.BtnGuardar.Text = "Guadar";
             this.BtnGuardar.UseVisualStyleBackColor = true;
             // 
-            // BtnEliminar
-            // 
-            this.BtnEliminar.Location = new System.Drawing.Point(177, 170);
-            this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.BtnEliminar.TabIndex = 1089;
-            this.BtnEliminar.Text = "Eliminar";
-            this.BtnEliminar.UseVisualStyleBackColor = true;
-            // 
             // BtnModificar
             // 
-            this.BtnModificar.Location = new System.Drawing.Point(259, 170);
+            this.BtnModificar.Location = new System.Drawing.Point(174, 171);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(75, 23);
             this.BtnModificar.TabIndex = 1090;
@@ -218,24 +208,26 @@
             // DgvEstudiante
             // 
             this.DgvEstudiante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvEstudiante.Location = new System.Drawing.Point(13, 200);
+            this.DgvEstudiante.Location = new System.Drawing.Point(12, 200);
             this.DgvEstudiante.Name = "DgvEstudiante";
-            this.DgvEstudiante.Size = new System.Drawing.Size(604, 182);
+            this.DgvEstudiante.Size = new System.Drawing.Size(616, 182);
             this.DgvEstudiante.TabIndex = 1091;
             // 
             // FrmEstudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 382);
+            this.ClientSize = new System.Drawing.Size(639, 392);
             this.Controls.Add(this.DgvEstudiante);
             this.Controls.Add(this.BtnModificar);
-            this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.BtnNuevo);
             this.Controls.Add(this.gbx_estudiante);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmEstudiantes";
-            this.Text = "FrmEstudiantes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registro de estudiantes";
             this.gbx_estudiante.ResumeLayout(false);
             this.gbx_estudiante.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvEstudiante)).EndInit();
@@ -260,7 +252,6 @@
         internal System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.Button BtnNuevo;
         private System.Windows.Forms.Button BtnGuardar;
-        private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.DataGridView DgvEstudiante;
     }

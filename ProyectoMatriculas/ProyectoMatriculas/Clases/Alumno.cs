@@ -79,17 +79,13 @@ namespace ProyectoMatriculas.Clases
             {
                 ComandoSQL.Connection = ClaseConexion.Conectar;
                 ComandoSQL.CommandType = CommandType.StoredProcedure;
-                ComandoSQL.CommandText = "SP_SC_DEPENDENCIAS_GRABAR";
-                ComandoSQL.Parameters.AddWithValue("@ID_SUCURSAL", NuevaDependencia.ID_SUCURSAL);
-                ComandoSQL.Parameters.AddWithValue("@ID_DEPENDENCIA", NuevaDependencia.ID_DEPENDENCIA);
-                ComandoSQL.Parameters.AddWithValue("@NOMBRE_DEPENDENCIA", NuevaDependencia.NOMBRE_DEPENDENCIA);
-                ComandoSQL.Parameters.AddWithValue("@ID_ESTADO", NuevaDependencia.ID_ESTADO);
-                ComandoSQL.Parameters.AddWithValue("@LOGIN_CREACION", NuevaDependencia.LOGIN_CREACION);
-                ComandoSQL.Parameters.AddWithValue("@FECHA_CREACION", NuevaDependencia.FECHA_CREACION);
-                if (NuevaDependencia.LOGIN_MODIFICACION.Equals("null")) { ComandoSQL.Parameters.AddWithValue("@LOGIN_MODIFICACION", DBNull.Value); }
-                else { ComandoSQL.Parameters.AddWithValue("@LOGIN_MODIFICACION", NuevaDependencia.LOGIN_MODIFICACION); }
-                if (NuevaDependencia.FECHA_MODIFICACION.Equals("null")) { ComandoSQL.Parameters.AddWithValue("@FECHA_MODIFICACION", DBNull.Value); }
-                else { ComandoSQL.Parameters.AddWithValue("@FECHA_MODIFICACION", NuevaDependencia.FECHA_MODIFICACION); }
+                ComandoSQL.CommandText = "SP_Alumno_Grabar";
+                ComandoSQL.Parameters.AddWithValue("@Cedula", NuevoAlumno.Cedula);
+                ComandoSQL.Parameters.AddWithValue("@Nombre", NuevoAlumno.Nombre);
+                ComandoSQL.Parameters.AddWithValue("@Apellido", NuevoAlumno.Apellido);
+                ComandoSQL.Parameters.AddWithValue("@Direccion", NuevoAlumno.Direccion);
+                ComandoSQL.Parameters.AddWithValue("@Telefono", NuevoAlumno.Telefono);
+                ComandoSQL.Parameters.AddWithValue("@Fecha_Nacimiento", NuevoAlumno.Fecha_Nacimiento);
                 if (ClaseConexion.EjecutarSQLConProcedimiento(ComandoSQL) > 0)
                     Resultado = true;
                 else
@@ -106,7 +102,7 @@ namespace ProyectoMatriculas.Clases
         /// Devuelve las dependencias que tiene una sucursal
         /// </summary>
         /// <returns></returns>
-        public DataTable GetDependenciasPorSucursal(Clases.Dependencia DependenciaConsulta)
+        public DataTable GetAlumnoPorCedula(Clases.Alumno AlumnoConsulta)
         {
             #region :-: Clases Utilizadas :-:
 
@@ -125,38 +121,8 @@ namespace ProyectoMatriculas.Clases
             {
                 ComandoParaConsulta.Connection = ClaseConexion.Conectar;
                 ComandoParaConsulta.CommandType = CommandType.StoredProcedure;
-                ComandoParaConsulta.CommandText = "SP_SC_DEPENDENCIAS_CARGAR_POR_ID_SUCURSAL";
-                ComandoParaConsulta.Parameters.AddWithValue("@ID_SUCURSAL", DependenciaConsulta.ID_SUCURSAL);
-                DtGuia = ClaseConexion.CargarDatatableConProcedimiento(ComandoParaConsulta);
-            }
-            return DtGuia;
-        }
-
-        /// <summary>
-        /// Devuelve una dependencia por su Id
-        /// </summary>
-        /// <returns></returns>
-        public DataTable GetDependenciaPorId(Clases.Dependencia DependenciaConsulta)
-        {
-            #region :-: Clases Utilizadas :-:
-
-            Clases.Conexion ClaseConexion = new Clases.Conexion();
-
-            #endregion
-
-            #region :-: Variables Utilizadas :-:
-
-            DataTable DtGuia = new DataTable();
-
-            #endregion
-
-            ClaseConexion.ConectarABase();
-            using (SqlCommand ComandoParaConsulta = new SqlCommand())
-            {
-                ComandoParaConsulta.Connection = ClaseConexion.Conectar;
-                ComandoParaConsulta.CommandType = CommandType.StoredProcedure;
-                ComandoParaConsulta.CommandText = "SP_SC_DEPENDENCIAS_CARGAR_POR_ID_DEPENDENCIA";
-                ComandoParaConsulta.Parameters.AddWithValue("@ID_DEPENDENCIA", DependenciaConsulta.ID_DEPENDENCIA);
+                ComandoParaConsulta.CommandText = "SP_Alumno_Cargar_Por_Cedula";
+                ComandoParaConsulta.Parameters.AddWithValue("@Cedula", AlumnoConsulta.Cedula);
                 DtGuia = ClaseConexion.CargarDatatableConProcedimiento(ComandoParaConsulta);
             }
             return DtGuia;
@@ -166,7 +132,7 @@ namespace ProyectoMatriculas.Clases
         /// Devuelve todas las Dependencias
         /// </summary>
         /// <returns></returns>
-        public DataTable GetTodasLasDependencias()
+        public DataTable GetTodosLosAlumnos()
         {
             #region :-: Clases Utilizadas :-:
 
@@ -185,7 +151,7 @@ namespace ProyectoMatriculas.Clases
             {
                 ComandoParaConsulta.Connection = ClaseConexion.Conectar;
                 ComandoParaConsulta.CommandType = CommandType.StoredProcedure;
-                ComandoParaConsulta.CommandText = "SP_SC_DEPENDENCIAS_CARGAR_TODAS_LAS_DEPENDENCIAS";
+                ComandoParaConsulta.CommandText = "SP_Alumno_Cargar_Todos";
                 DtGuia = ClaseConexion.CargarDatatableConProcedimiento(ComandoParaConsulta);
             }
             return DtGuia;
