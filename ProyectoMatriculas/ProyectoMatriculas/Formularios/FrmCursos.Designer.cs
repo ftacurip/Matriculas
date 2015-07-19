@@ -111,6 +111,7 @@
             this.Controls.Add(this.TxtCurso);
             this.Controls.Add(this.label1);
             this.Name = "FrmCursos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCursos";
             ((System.ComponentModel.ISupportInitialize)(this.DgvCursos)).EndInit();
             this.ResumeLayout(false);
