@@ -50,16 +50,37 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCursos.Designer.cs">
+      <DependentUpon>FrmCursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmEstudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmEstudiantes.Designer.cs">
       <DependentUpon>FrmEstudiantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmMatriculacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmMatriculacion.Designer.cs">
+      <DependentUpon>FrmMatriculacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPeriodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPeriodos.Designer.cs">
+      <DependentUpon>FrmPeriodos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCursos.resx">
+      <DependentUpon>FrmCursos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmEstudiantes.resx">
       <DependentUpon>FrmEstudiantes.cs</DependentUpon>

@@ -9,16 +9,11 @@ using System.Windows.Forms;
 
 namespace ProyectoMatriculas.Formularios
 {
-    public partial class FrmEstudiantes : Form
+    public partial class FrmCursos : Form
     {
-        public FrmEstudiantes()
+        public FrmCursos()
         {
             InitializeComponent();
-        }
-
-        private void gbx_estudiante_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }
