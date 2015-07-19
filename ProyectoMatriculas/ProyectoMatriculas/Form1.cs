@@ -18,7 +18,14 @@ namespace ProyectoMatriculas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola ojitos, que mas ve");
+            #region :: Clases Utilizadas ::
+
+            Clases.Conexion ClaseConexion = new Clases.Conexion();
+
+            #endregion
+
+            if (ClaseConexion.ConectarABase() == true) { MessageBox.Show("Conexión exitosa"); }
+            else { MessageBox.Show("Conexión fallida"); }
         }
     }
 }
