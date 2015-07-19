@@ -16,16 +16,18 @@ namespace ProyectoMatriculas
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            #region :: Clases Utilizadas ::
+            this.Close();
+        }
 
-            Clases.Conexion ClaseConexion = new Clases.Conexion();
-
-            #endregion
-
-            if (ClaseConexion.ConectarABase() == true) { MessageBox.Show("Conexión exitosa"); }
-            else { MessageBox.Show("Conexión fallida"); }
+        private void registrarAlumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formularios.FrmEstudiantes FrmEst = new Formularios.FrmEstudiantes();
+            FrmEst.Top = (PanContenedorFormularios.Height / 2) - (FrmEst.Height / 2);
+            FrmEst.Left = (PanContenedorFormularios.Width / 2) - (FrmEst.Width / 2);
+            FrmEst.TopLevel = false;
+            PanContenedorFormularios.Controls.Add(FrmEst); FrmEst.Show();
         }
     }
 }
