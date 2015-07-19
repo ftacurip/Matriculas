@@ -123,7 +123,8 @@ namespace ProyectoMatriculas.Formularios
 
         private void BtnNuevo_Click(object sender, EventArgs e)
         {
-            TxtCedula.ReadOnly = true;
+            TxtCedula.ReadOnly = false;
+            LimpiarControles();
         }
     }
 }
