@@ -34,8 +34,8 @@
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.BtnModificar = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.DgvCursos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvCursos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -90,20 +90,20 @@
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // DgvCursos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 129);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(321, 172);
-            this.dataGridView1.TabIndex = 6;
+            this.DgvCursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvCursos.Location = new System.Drawing.Point(13, 129);
+            this.DgvCursos.Name = "DgvCursos";
+            this.DgvCursos.Size = new System.Drawing.Size(321, 172);
+            this.DgvCursos.TabIndex = 6;
             // 
             // FrmCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(348, 313);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DgvCursos);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.BtnGuardar);
@@ -112,7 +112,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmCursos";
             this.Text = "FrmCursos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvCursos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,6 +126,6 @@
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Button BtnEliminar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DgvCursos;
     }
 }

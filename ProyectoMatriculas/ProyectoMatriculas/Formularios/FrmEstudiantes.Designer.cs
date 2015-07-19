@@ -30,34 +30,40 @@
         {
             this.gbx_estudiante = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txt_fecha = new System.Windows.Forms.DateTimePicker();
-            this.txt_telefono = new System.Windows.Forms.TextBox();
+            this.TxtFecha = new System.Windows.Forms.DateTimePicker();
+            this.TxtTelefono = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_direccion = new System.Windows.Forms.TextBox();
+            this.TxtDireccion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
-            this.txt_num_doc = new System.Windows.Forms.TextBox();
+            this.TxtCedula = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
-            this.txt_apellido1 = new System.Windows.Forms.TextBox();
+            this.TxtApellido = new System.Windows.Forms.TextBox();
             this.Label5 = new System.Windows.Forms.Label();
-            this.txt_nombre = new System.Windows.Forms.TextBox();
+            this.TxtNombre = new System.Windows.Forms.TextBox();
+            this.BtnNuevo = new System.Windows.Forms.Button();
+            this.BtnGuardar = new System.Windows.Forms.Button();
+            this.BtnEliminar = new System.Windows.Forms.Button();
+            this.BtnModificar = new System.Windows.Forms.Button();
+            this.DgvEstudiante = new System.Windows.Forms.DataGridView();
             this.gbx_estudiante.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvEstudiante)).BeginInit();
             this.SuspendLayout();
             // 
             // gbx_estudiante
             // 
             this.gbx_estudiante.Controls.Add(this.label7);
-            this.gbx_estudiante.Controls.Add(this.txt_fecha);
-            this.gbx_estudiante.Controls.Add(this.txt_telefono);
+            this.gbx_estudiante.Controls.Add(this.TxtFecha);
+            this.gbx_estudiante.Controls.Add(this.TxtTelefono);
             this.gbx_estudiante.Controls.Add(this.label3);
-            this.gbx_estudiante.Controls.Add(this.txt_direccion);
+            this.gbx_estudiante.Controls.Add(this.TxtDireccion);
             this.gbx_estudiante.Controls.Add(this.label6);
             this.gbx_estudiante.Controls.Add(this.Label1);
-            this.gbx_estudiante.Controls.Add(this.txt_num_doc);
+            this.gbx_estudiante.Controls.Add(this.TxtCedula);
             this.gbx_estudiante.Controls.Add(this.Label2);
-            this.gbx_estudiante.Controls.Add(this.txt_apellido1);
+            this.gbx_estudiante.Controls.Add(this.TxtApellido);
             this.gbx_estudiante.Controls.Add(this.Label5);
-            this.gbx_estudiante.Controls.Add(this.txt_nombre);
+            this.gbx_estudiante.Controls.Add(this.TxtNombre);
             this.gbx_estudiante.Location = new System.Drawing.Point(12, 21);
             this.gbx_estudiante.Name = "gbx_estudiante";
             this.gbx_estudiante.Size = new System.Drawing.Size(616, 142);
@@ -75,22 +81,22 @@
             this.label7.TabIndex = 1096;
             this.label7.Text = "FECHA NACIMIENTO:";
             // 
-            // txt_fecha
+            // TxtFecha
             // 
-            this.txt_fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txt_fecha.Location = new System.Drawing.Point(435, 91);
-            this.txt_fecha.Name = "txt_fecha";
-            this.txt_fecha.Size = new System.Drawing.Size(160, 20);
-            this.txt_fecha.TabIndex = 1095;
+            this.TxtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.TxtFecha.Location = new System.Drawing.Point(435, 91);
+            this.TxtFecha.Name = "TxtFecha";
+            this.TxtFecha.Size = new System.Drawing.Size(160, 20);
+            this.TxtFecha.TabIndex = 1095;
             // 
-            // txt_telefono
+            // TxtTelefono
             // 
-            this.txt_telefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt_telefono.Location = new System.Drawing.Point(398, 60);
-            this.txt_telefono.MaxLength = 15;
-            this.txt_telefono.Name = "txt_telefono";
-            this.txt_telefono.Size = new System.Drawing.Size(197, 20);
-            this.txt_telefono.TabIndex = 1092;
+            this.TxtTelefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtTelefono.Location = new System.Drawing.Point(398, 60);
+            this.TxtTelefono.MaxLength = 15;
+            this.TxtTelefono.Name = "TxtTelefono";
+            this.TxtTelefono.Size = new System.Drawing.Size(197, 20);
+            this.TxtTelefono.TabIndex = 1092;
             // 
             // label3
             // 
@@ -101,14 +107,14 @@
             this.label3.TabIndex = 1093;
             this.label3.Text = "TELEFONO:";
             // 
-            // txt_direccion
+            // TxtDireccion
             // 
-            this.txt_direccion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt_direccion.Location = new System.Drawing.Point(398, 23);
-            this.txt_direccion.MaxLength = 40;
-            this.txt_direccion.Name = "txt_direccion";
-            this.txt_direccion.Size = new System.Drawing.Size(197, 20);
-            this.txt_direccion.TabIndex = 1091;
+            this.TxtDireccion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtDireccion.Location = new System.Drawing.Point(398, 23);
+            this.TxtDireccion.MaxLength = 40;
+            this.TxtDireccion.Name = "TxtDireccion";
+            this.TxtDireccion.Size = new System.Drawing.Size(197, 20);
+            this.TxtDireccion.TabIndex = 1091;
             // 
             // label6
             // 
@@ -128,14 +134,14 @@
             this.Label1.TabIndex = 1090;
             this.Label1.Text = "Nº Cedula:";
             // 
-            // txt_num_doc
+            // TxtCedula
             // 
-            this.txt_num_doc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt_num_doc.Location = new System.Drawing.Point(109, 23);
-            this.txt_num_doc.MaxLength = 20;
-            this.txt_num_doc.Name = "txt_num_doc";
-            this.txt_num_doc.Size = new System.Drawing.Size(197, 20);
-            this.txt_num_doc.TabIndex = 1083;
+            this.TxtCedula.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtCedula.Location = new System.Drawing.Point(109, 23);
+            this.TxtCedula.MaxLength = 20;
+            this.TxtCedula.Name = "TxtCedula";
+            this.TxtCedula.Size = new System.Drawing.Size(197, 20);
+            this.TxtCedula.TabIndex = 1083;
             // 
             // Label2
             // 
@@ -146,14 +152,14 @@
             this.Label2.TabIndex = 1087;
             this.Label2.Text = "Nombre:";
             // 
-            // txt_apellido1
+            // TxtApellido
             // 
-            this.txt_apellido1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt_apellido1.Location = new System.Drawing.Point(109, 90);
-            this.txt_apellido1.MaxLength = 40;
-            this.txt_apellido1.Name = "txt_apellido1";
-            this.txt_apellido1.Size = new System.Drawing.Size(197, 20);
-            this.txt_apellido1.TabIndex = 1085;
+            this.TxtApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtApellido.Location = new System.Drawing.Point(109, 90);
+            this.TxtApellido.MaxLength = 40;
+            this.TxtApellido.Name = "TxtApellido";
+            this.TxtApellido.Size = new System.Drawing.Size(197, 20);
+            this.TxtApellido.TabIndex = 1085;
             // 
             // Label5
             // 
@@ -164,25 +170,75 @@
             this.Label5.TabIndex = 1089;
             this.Label5.Text = "Apellido:";
             // 
-            // txt_nombre
+            // TxtNombre
             // 
-            this.txt_nombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt_nombre.Location = new System.Drawing.Point(109, 57);
-            this.txt_nombre.MaxLength = 40;
-            this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(197, 20);
-            this.txt_nombre.TabIndex = 1084;
+            this.TxtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtNombre.Location = new System.Drawing.Point(109, 57);
+            this.TxtNombre.MaxLength = 40;
+            this.TxtNombre.Name = "TxtNombre";
+            this.TxtNombre.Size = new System.Drawing.Size(197, 20);
+            this.TxtNombre.TabIndex = 1084;
+            // 
+            // BtnNuevo
+            // 
+            this.BtnNuevo.Location = new System.Drawing.Point(13, 170);
+            this.BtnNuevo.Name = "BtnNuevo";
+            this.BtnNuevo.Size = new System.Drawing.Size(75, 23);
+            this.BtnNuevo.TabIndex = 1087;
+            this.BtnNuevo.Text = "Nuevo";
+            this.BtnNuevo.UseVisualStyleBackColor = true;
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.Location = new System.Drawing.Point(95, 170);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.BtnGuardar.TabIndex = 1088;
+            this.BtnGuardar.Text = "Guadar";
+            this.BtnGuardar.UseVisualStyleBackColor = true;
+            // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.Location = new System.Drawing.Point(177, 170);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.BtnEliminar.TabIndex = 1089;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // BtnModificar
+            // 
+            this.BtnModificar.Location = new System.Drawing.Point(259, 170);
+            this.BtnModificar.Name = "BtnModificar";
+            this.BtnModificar.Size = new System.Drawing.Size(75, 23);
+            this.BtnModificar.TabIndex = 1090;
+            this.BtnModificar.Text = "Modificar";
+            this.BtnModificar.UseVisualStyleBackColor = true;
+            // 
+            // DgvEstudiante
+            // 
+            this.DgvEstudiante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvEstudiante.Location = new System.Drawing.Point(13, 200);
+            this.DgvEstudiante.Name = "DgvEstudiante";
+            this.DgvEstudiante.Size = new System.Drawing.Size(604, 182);
+            this.DgvEstudiante.TabIndex = 1091;
             // 
             // FrmEstudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 328);
+            this.ClientSize = new System.Drawing.Size(629, 382);
+            this.Controls.Add(this.DgvEstudiante);
+            this.Controls.Add(this.BtnModificar);
+            this.Controls.Add(this.BtnEliminar);
+            this.Controls.Add(this.BtnGuardar);
+            this.Controls.Add(this.BtnNuevo);
             this.Controls.Add(this.gbx_estudiante);
             this.Name = "FrmEstudiantes";
             this.Text = "FrmEstudiantes";
             this.gbx_estudiante.ResumeLayout(false);
             this.gbx_estudiante.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvEstudiante)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -191,16 +247,21 @@
 
         private System.Windows.Forms.GroupBox gbx_estudiante;
         internal System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker txt_fecha;
-        internal System.Windows.Forms.TextBox txt_telefono;
+        private System.Windows.Forms.DateTimePicker TxtFecha;
+        internal System.Windows.Forms.TextBox TxtTelefono;
         internal System.Windows.Forms.Label label3;
-        internal System.Windows.Forms.TextBox txt_direccion;
+        internal System.Windows.Forms.TextBox TxtDireccion;
         internal System.Windows.Forms.Label label6;
         internal System.Windows.Forms.Label Label1;
-        internal System.Windows.Forms.TextBox txt_num_doc;
+        internal System.Windows.Forms.TextBox TxtCedula;
         internal System.Windows.Forms.Label Label2;
-        internal System.Windows.Forms.TextBox txt_apellido1;
+        internal System.Windows.Forms.TextBox TxtApellido;
         internal System.Windows.Forms.Label Label5;
-        internal System.Windows.Forms.TextBox txt_nombre;
+        internal System.Windows.Forms.TextBox TxtNombre;
+        private System.Windows.Forms.Button BtnNuevo;
+        private System.Windows.Forms.Button BtnGuardar;
+        private System.Windows.Forms.Button BtnEliminar;
+        private System.Windows.Forms.Button BtnModificar;
+        private System.Windows.Forms.DataGridView DgvEstudiante;
     }
 }
