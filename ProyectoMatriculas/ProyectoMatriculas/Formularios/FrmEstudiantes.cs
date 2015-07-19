@@ -41,7 +41,7 @@ namespace ProyectoMatriculas.Formularios
 
         void CargarAlumnos()
         {
-            #region :: Variables Utilizadas ::
+            #region :: Clases Utilizadas ::
 
             Clases.Alumno AlumnosConsulta = new Clases.Alumno();
 
@@ -89,7 +89,6 @@ namespace ProyectoMatriculas.Formularios
 
             if (ValidarControles() == true)
             {
-                //Pendiente validación de cédula
                 NuevoAlumno.Cedula = TxtCedula.Text;
                 NuevoAlumno.Nombre = TxtNombre.Text.ToUpper();
                 NuevoAlumno.Apellido = TxtApellido.Text.ToUpper();
@@ -99,8 +98,6 @@ namespace ProyectoMatriculas.Formularios
                 if (NuevoAlumno.IngresarNuevoAlumno(NuevoAlumno) == true) { MessageBox.Show("El estudiante ha sido registrado exitosamente."); LimpiarControles(); CargarAlumnos(); }
                 else { MessageBox.Show("El estudiante NO ha podido ser registrado."); }
             }
-            else { }
-
         }
 
         private void FrmEstudiantes_Load(object sender, EventArgs e)
@@ -110,12 +107,12 @@ namespace ProyectoMatriculas.Formularios
 
         private void DgvEstudiante_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(DgvEstudiante.Rows.Count> 0)
+            if (DgvEstudiante.Rows.Count > 0)
             {
                 TxtCedula.Text = DgvEstudiante.Rows[e.RowIndex].Cells["Cedula"].Value.ToString(); TxtCedula.ReadOnly = true;
                 TxtNombre.Text = DgvEstudiante.Rows[e.RowIndex].Cells["Nombre"].Value.ToString();
                 TxtApellido.Text = DgvEstudiante.Rows[e.RowIndex].Cells["Apellido"].Value.ToString();
-                TxtDireccion.Text= DgvEstudiante.Rows[e.RowIndex].Cells["Direccion"].Value.ToString();
+                TxtDireccion.Text = DgvEstudiante.Rows[e.RowIndex].Cells["Direccion"].Value.ToString();
                 TxtTelefono.Text = DgvEstudiante.Rows[e.RowIndex].Cells["Telefono"].Value.ToString();
                 DTFechaNacimiento.Value = Convert.ToDateTime(DgvEstudiante.Rows[e.RowIndex].Cells["Fecha_Nacimiento"].Value.ToString());
             }

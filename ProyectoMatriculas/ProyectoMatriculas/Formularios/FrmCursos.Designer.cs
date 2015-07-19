@@ -32,8 +32,6 @@
             this.TxtCurso = new System.Windows.Forms.TextBox();
             this.BtnNuevo = new System.Windows.Forms.Button();
             this.BtnGuardar = new System.Windows.Forms.Button();
-            this.BtnModificar = new System.Windows.Forms.Button();
-            this.BtnEliminar = new System.Windows.Forms.Button();
             this.DgvCursos = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCursos)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +54,7 @@
             // 
             // BtnNuevo
             // 
-            this.BtnNuevo.Location = new System.Drawing.Point(13, 90);
+            this.BtnNuevo.Location = new System.Drawing.Point(87, 90);
             this.BtnNuevo.Name = "BtnNuevo";
             this.BtnNuevo.Size = new System.Drawing.Size(75, 23);
             this.BtnNuevo.TabIndex = 2;
@@ -65,30 +63,12 @@
             // 
             // BtnGuardar
             // 
-            this.BtnGuardar.Location = new System.Drawing.Point(95, 89);
+            this.BtnGuardar.Location = new System.Drawing.Point(169, 89);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(75, 23);
             this.BtnGuardar.TabIndex = 3;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.UseVisualStyleBackColor = true;
-            // 
-            // BtnModificar
-            // 
-            this.BtnModificar.Location = new System.Drawing.Point(177, 90);
-            this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(75, 23);
-            this.BtnModificar.TabIndex = 4;
-            this.BtnModificar.Text = "Modificar";
-            this.BtnModificar.UseVisualStyleBackColor = true;
-            // 
-            // BtnEliminar
-            // 
-            this.BtnEliminar.Location = new System.Drawing.Point(259, 90);
-            this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.BtnEliminar.TabIndex = 5;
-            this.BtnEliminar.Text = "Eliminar";
-            this.BtnEliminar.UseVisualStyleBackColor = true;
             // 
             // DgvCursos
             // 
@@ -104,8 +84,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(348, 313);
             this.Controls.Add(this.DgvCursos);
-            this.Controls.Add(this.BtnEliminar);
-            this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.BtnNuevo);
             this.Controls.Add(this.TxtCurso);
@@ -125,8 +103,6 @@
         private System.Windows.Forms.TextBox TxtCurso;
         private System.Windows.Forms.Button BtnNuevo;
         private System.Windows.Forms.Button BtnGuardar;
-        private System.Windows.Forms.Button BtnModificar;
-        private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.DataGridView DgvCursos;
     }
 }
