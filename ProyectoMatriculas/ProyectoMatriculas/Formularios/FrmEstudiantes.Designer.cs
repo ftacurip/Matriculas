@@ -107,6 +107,7 @@
             // 
             // TxtDireccion
             // 
+            this.TxtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtDireccion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtDireccion.Location = new System.Drawing.Point(109, 97);
             this.TxtDireccion.MaxLength = 150;
@@ -152,6 +153,7 @@
             // 
             // TxtApellido
             // 
+            this.TxtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtApellido.Location = new System.Drawing.Point(109, 71);
             this.TxtApellido.MaxLength = 100;
@@ -170,6 +172,7 @@
             // 
             // TxtNombre
             // 
+            this.TxtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtNombre.Location = new System.Drawing.Point(109, 45);
             this.TxtNombre.MaxLength = 100;

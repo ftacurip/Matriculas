@@ -68,12 +68,13 @@ namespace ProyectoMatriculas.Clases
         #endregion
 
         #region :-: Consultas de datos :-:
-        /*
+        
         /// <summary>
-        /// Devuelve las dependencias que tiene una sucursal
+        /// Devuelve un curso según su Id
         /// </summary>
+        /// <param name="CursoConsulta">Objeto de tipo Curso que contiene el Id del curso a consultar</param>
         /// <returns></returns>
-        public DataTable GetAlumnoPorCedula(Clases.Alumno AlumnoConsulta)
+        public DataTable GetCursoPorId(Clases.Curso CursoConsulta)
         {
             #region :-: Clases Utilizadas :-:
 
@@ -92,18 +93,18 @@ namespace ProyectoMatriculas.Clases
             {
                 ComandoParaConsulta.Connection = ClaseConexion.Conectar;
                 ComandoParaConsulta.CommandType = CommandType.StoredProcedure;
-                ComandoParaConsulta.CommandText = "SP_Alumno_Cargar_Por_Cedula";
-                ComandoParaConsulta.Parameters.AddWithValue("@Cedula", AlumnoConsulta.Cedula);
+                ComandoParaConsulta.CommandText = "SP_Curso_Cargar_Por_Id_Curso";
+                ComandoParaConsulta.Parameters.AddWithValue("@Id_Curso", CursoConsulta.Id_Curso);
                 DtGuia = ClaseConexion.CargarDatatableConProcedimiento(ComandoParaConsulta);
             }
             return DtGuia;
         }
 
         /// <summary>
-        /// Devuelve todas las Dependencias
+        /// Devuelve todos los cursos
         /// </summary>
         /// <returns></returns>
-        public DataTable GetTodosLosAlumnos()
+        public DataTable GetTodosLosCursos()
         {
             #region :-: Clases Utilizadas :-:
 
@@ -122,12 +123,11 @@ namespace ProyectoMatriculas.Clases
             {
                 ComandoParaConsulta.Connection = ClaseConexion.Conectar;
                 ComandoParaConsulta.CommandType = CommandType.StoredProcedure;
-                ComandoParaConsulta.CommandText = "SP_Alumno_Cargar_Todos";
+                ComandoParaConsulta.CommandText = "SP_Curso_Cargar_Todos";
                 DtGuia = ClaseConexion.CargarDatatableConProcedimiento(ComandoParaConsulta);
             }
             return DtGuia;
         }
-        */
 
         #endregion        
 
