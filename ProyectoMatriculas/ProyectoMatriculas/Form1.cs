@@ -47,5 +47,14 @@ namespace ProyectoMatriculas
             FrmPer.TopLevel = false;
             PanContenedorFormularios.Controls.Add(FrmPer); FrmPer.Show();
         }
+
+        private void registroDeMatriculaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formularios.FrmMatriculacion FrmMatr = new Formularios.FrmMatriculacion();
+            FrmMatr.Top = (PanContenedorFormularios.Height / 2) - (FrmMatr.Height / 2);
+            FrmMatr.Left = (PanContenedorFormularios.Width / 2) - (FrmMatr.Width / 2);
+            FrmMatr.TopLevel = false;
+            PanContenedorFormularios.Controls.Add(FrmMatr); FrmMatr.Show();
+        }
     }
 }

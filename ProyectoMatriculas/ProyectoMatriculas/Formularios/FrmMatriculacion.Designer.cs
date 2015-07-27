@@ -258,9 +258,10 @@
             this.Controls.Add(this.gbx_busq_est);
             this.Controls.Add(this.BtnNuevo);
             this.Controls.Add(this.gbx_info_mat);
+            this.MaximizeBox = false;
             this.Name = "FrmMatriculacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmMatriculacion";
+            this.Text = "Registro de Matricula";
             this.gbx_info_mat.ResumeLayout(false);
             this.gbx_info_mat.PerformLayout();
             this.gbx_busq_est.ResumeLayout(false);

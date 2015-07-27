@@ -37,6 +37,8 @@
             this.registrarPeriodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PanContenedorFormularios = new System.Windows.Forms.Panel();
+            this.matriculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroDeMatriculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +48,7 @@
             this.alumnosToolStripMenuItem,
             this.cursosToolStripMenuItem,
             this.periodosToolStripMenuItem,
+            this.matriculasToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.MenuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.MenuPrincipal.Name = "MenuPrincipal";
@@ -115,6 +118,21 @@
             this.PanContenedorFormularios.Size = new System.Drawing.Size(943, 508);
             this.PanContenedorFormularios.TabIndex = 2;
             // 
+            // matriculasToolStripMenuItem
+            // 
+            this.matriculasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registroDeMatriculaToolStripMenuItem});
+            this.matriculasToolStripMenuItem.Name = "matriculasToolStripMenuItem";
+            this.matriculasToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.matriculasToolStripMenuItem.Text = "Matriculas";
+            // 
+            // registroDeMatriculaToolStripMenuItem
+            // 
+            this.registroDeMatriculaToolStripMenuItem.Name = "registroDeMatriculaToolStripMenuItem";
+            this.registroDeMatriculaToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.registroDeMatriculaToolStripMenuItem.Text = "Registro de Matricula";
+            this.registroDeMatriculaToolStripMenuItem.Click += new System.EventHandler(this.registroDeMatriculaToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,6 +162,8 @@
         private System.Windows.Forms.ToolStripMenuItem registrarCursosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem periodosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarPeriodosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem matriculasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroDeMatriculaToolStripMenuItem;
     }
 }
 

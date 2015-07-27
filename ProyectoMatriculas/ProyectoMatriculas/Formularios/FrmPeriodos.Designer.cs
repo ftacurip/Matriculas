@@ -79,9 +79,12 @@
             // 
             // DgvPeriodos
             // 
+            this.DgvPeriodos.AllowUserToAddRows = false;
+            this.DgvPeriodos.AllowUserToDeleteRows = false;
             this.DgvPeriodos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvPeriodos.Location = new System.Drawing.Point(6, 100);
             this.DgvPeriodos.Name = "DgvPeriodos";
+            this.DgvPeriodos.ReadOnly = true;
             this.DgvPeriodos.Size = new System.Drawing.Size(454, 180);
             this.DgvPeriodos.TabIndex = 4;
             this.DgvPeriodos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPeriodos_CellContentClick);
