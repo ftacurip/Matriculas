@@ -38,5 +38,14 @@ namespace ProyectoMatriculas
             FrmCur.TopLevel = false;
             PanContenedorFormularios.Controls.Add(FrmCur); FrmCur.Show();
         }
+
+        private void registrarPeriodosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formularios.FrmPeriodos FrmPer = new Formularios.FrmPeriodos();
+            FrmPer.Top = (PanContenedorFormularios.Height / 2) - (FrmPer.Height / 2);
+            FrmPer.Left = (PanContenedorFormularios.Width / 2) - (FrmPer.Width / 2);
+            FrmPer.TopLevel = false;
+            PanContenedorFormularios.Controls.Add(FrmPer); FrmPer.Show();
+        }
     }
 }

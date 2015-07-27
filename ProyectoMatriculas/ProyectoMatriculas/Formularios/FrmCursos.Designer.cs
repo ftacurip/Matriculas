@@ -34,8 +34,8 @@
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.DgvCursos = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.TxtIdCurso = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCursos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +65,7 @@
             this.BtnNuevo.TabIndex = 2;
             this.BtnNuevo.Text = "Nuevo";
             this.BtnNuevo.UseVisualStyleBackColor = true;
+            this.BtnNuevo.Click += new System.EventHandler(this.BtnNuevo_Click);
             // 
             // BtnGuardar
             // 
@@ -104,6 +105,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del Curso";
             // 
+            // TxtIdCurso
+            // 
+            this.TxtIdCurso.Location = new System.Drawing.Point(106, 19);
+            this.TxtIdCurso.Name = "TxtIdCurso";
+            this.TxtIdCurso.ReadOnly = true;
+            this.TxtIdCurso.Size = new System.Drawing.Size(140, 20);
+            this.TxtIdCurso.TabIndex = 0;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -112,14 +121,6 @@
             this.label2.Size = new System.Drawing.Size(66, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "Id del Curso:";
-            // 
-            // TxtIdCurso
-            // 
-            this.TxtIdCurso.Location = new System.Drawing.Point(106, 19);
-            this.TxtIdCurso.Name = "TxtIdCurso";
-            this.TxtIdCurso.ReadOnly = true;
-            this.TxtIdCurso.Size = new System.Drawing.Size(140, 20);
-            this.TxtIdCurso.TabIndex = 0;
             // 
             // FrmCursos
             // 

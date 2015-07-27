@@ -31,10 +31,12 @@
             this.MenuPrincipal = new System.Windows.Forms.MenuStrip();
             this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarAlumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PanContenedorFormularios = new System.Windows.Forms.Panel();
             this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarCursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.periodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarPeriodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PanContenedorFormularios = new System.Windows.Forms.Panel();
             this.MenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,6 +45,7 @@
             this.MenuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.alumnosToolStripMenuItem,
             this.cursosToolStripMenuItem,
+            this.periodosToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.MenuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.MenuPrincipal.Name = "MenuPrincipal";
@@ -65,6 +68,36 @@
             this.registrarAlumnosToolStripMenuItem.Text = "Registrar alumnos";
             this.registrarAlumnosToolStripMenuItem.Click += new System.EventHandler(this.registrarAlumnosToolStripMenuItem_Click);
             // 
+            // cursosToolStripMenuItem
+            // 
+            this.cursosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarCursosToolStripMenuItem});
+            this.cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
+            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.cursosToolStripMenuItem.Text = "Cursos";
+            // 
+            // registrarCursosToolStripMenuItem
+            // 
+            this.registrarCursosToolStripMenuItem.Name = "registrarCursosToolStripMenuItem";
+            this.registrarCursosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.registrarCursosToolStripMenuItem.Text = "Registrar Cursos";
+            this.registrarCursosToolStripMenuItem.Click += new System.EventHandler(this.registrarCursosToolStripMenuItem_Click);
+            // 
+            // periodosToolStripMenuItem
+            // 
+            this.periodosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarPeriodosToolStripMenuItem});
+            this.periodosToolStripMenuItem.Name = "periodosToolStripMenuItem";
+            this.periodosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.periodosToolStripMenuItem.Text = "Periodos";
+            // 
+            // registrarPeriodosToolStripMenuItem
+            // 
+            this.registrarPeriodosToolStripMenuItem.Name = "registrarPeriodosToolStripMenuItem";
+            this.registrarPeriodosToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.registrarPeriodosToolStripMenuItem.Text = "Registrar Periodos";
+            this.registrarPeriodosToolStripMenuItem.Click += new System.EventHandler(this.registrarPeriodosToolStripMenuItem_Click);
+            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
@@ -81,21 +114,6 @@
             this.PanContenedorFormularios.Name = "PanContenedorFormularios";
             this.PanContenedorFormularios.Size = new System.Drawing.Size(943, 508);
             this.PanContenedorFormularios.TabIndex = 2;
-            // 
-            // cursosToolStripMenuItem
-            // 
-            this.cursosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarCursosToolStripMenuItem});
-            this.cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
-            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.cursosToolStripMenuItem.Text = "Cursos";
-            // 
-            // registrarCursosToolStripMenuItem
-            // 
-            this.registrarCursosToolStripMenuItem.Name = "registrarCursosToolStripMenuItem";
-            this.registrarCursosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.registrarCursosToolStripMenuItem.Text = "Registrar Cursos";
-            this.registrarCursosToolStripMenuItem.Click += new System.EventHandler(this.registrarCursosToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -124,6 +142,8 @@
         private System.Windows.Forms.ToolStripMenuItem registrarAlumnosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cursosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarCursosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem periodosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarPeriodosToolStripMenuItem;
     }
 }
 

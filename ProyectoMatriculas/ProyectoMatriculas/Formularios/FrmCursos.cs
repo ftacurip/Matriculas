@@ -104,5 +104,10 @@ namespace ProyectoMatriculas.Formularios
         {
             CargarCursos();
         }
+
+        private void BtnNuevo_Click(object sender, EventArgs e)
+        {
+            LimpiarControles();
+        }
     }
 }
