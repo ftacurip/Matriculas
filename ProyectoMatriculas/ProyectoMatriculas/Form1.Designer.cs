@@ -35,10 +35,10 @@
             this.registrarCursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.periodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarPeriodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PanContenedorFormularios = new System.Windows.Forms.Panel();
             this.matriculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeMatriculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PanContenedorFormularios = new System.Windows.Forms.Panel();
             this.MenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,23 +101,6 @@
             this.registrarPeriodosToolStripMenuItem.Text = "Registrar Periodos";
             this.registrarPeriodosToolStripMenuItem.Click += new System.EventHandler(this.registrarPeriodosToolStripMenuItem_Click);
             // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
-            // PanContenedorFormularios
-            // 
-            this.PanContenedorFormularios.BackgroundImage = global::ProyectoMatriculas.Properties.Resources.o_COLLEGE_facebook;
-            this.PanContenedorFormularios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PanContenedorFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanContenedorFormularios.Location = new System.Drawing.Point(0, 24);
-            this.PanContenedorFormularios.Name = "PanContenedorFormularios";
-            this.PanContenedorFormularios.Size = new System.Drawing.Size(943, 508);
-            this.PanContenedorFormularios.TabIndex = 2;
-            // 
             // matriculasToolStripMenuItem
             // 
             this.matriculasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -133,11 +116,28 @@
             this.registroDeMatriculaToolStripMenuItem.Text = "Registro de Matricula";
             this.registroDeMatriculaToolStripMenuItem.Click += new System.EventHandler(this.registroDeMatriculaToolStripMenuItem_Click);
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // PanContenedorFormularios
+            // 
+            this.PanContenedorFormularios.BackgroundImage = global::ProyectoMatriculas.Properties.Resources.o_COLLEGE_facebook;
+            this.PanContenedorFormularios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PanContenedorFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanContenedorFormularios.Location = new System.Drawing.Point(0, 24);
+            this.PanContenedorFormularios.Name = "PanContenedorFormularios";
+            this.PanContenedorFormularios.Size = new System.Drawing.Size(943, 598);
+            this.PanContenedorFormularios.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 532);
+            this.ClientSize = new System.Drawing.Size(943, 622);
             this.Controls.Add(this.PanContenedorFormularios);
             this.Controls.Add(this.MenuPrincipal);
             this.MainMenuStrip = this.MenuPrincipal;
