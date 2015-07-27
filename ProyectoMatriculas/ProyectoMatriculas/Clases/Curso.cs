@@ -13,7 +13,6 @@ namespace ProyectoMatriculas.Clases
         #region :: Atributos y métodos Get/Set
         private int m_Id_Curso;
 		private string m_Nombre_Curso;
-        private string m_err = "";
 
         public int Id_Curso
         {
@@ -34,7 +33,7 @@ namespace ProyectoMatriculas.Clases
         /// <summary>
         /// Ingresa los datos de un nuevo curso en la tabla
         /// </summary>
-        ///<param name="NuevaDependencia"> Objeto de tipo Dependencia que contiene la información a guardar en la tabla </param>
+        ///<param name="NuevoCurso"> Objeto de tipo Curso que contiene la información a guardar en la tabla </param>
         /// <returns></returns>
         public bool IngresarNuevoCurso(Clases.Curso NuevoCurso)
         {

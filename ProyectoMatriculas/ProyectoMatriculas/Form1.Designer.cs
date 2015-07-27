@@ -33,6 +33,8 @@
             this.registrarAlumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PanContenedorFormularios = new System.Windows.Forms.Panel();
+            this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarCursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,6 +42,7 @@
             // 
             this.MenuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.alumnosToolStripMenuItem,
+            this.cursosToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.MenuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.MenuPrincipal.Name = "MenuPrincipal";
@@ -79,6 +82,21 @@
             this.PanContenedorFormularios.Size = new System.Drawing.Size(943, 508);
             this.PanContenedorFormularios.TabIndex = 2;
             // 
+            // cursosToolStripMenuItem
+            // 
+            this.cursosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarCursosToolStripMenuItem});
+            this.cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
+            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.cursosToolStripMenuItem.Text = "Cursos";
+            // 
+            // registrarCursosToolStripMenuItem
+            // 
+            this.registrarCursosToolStripMenuItem.Name = "registrarCursosToolStripMenuItem";
+            this.registrarCursosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.registrarCursosToolStripMenuItem.Text = "Registrar Cursos";
+            this.registrarCursosToolStripMenuItem.Click += new System.EventHandler(this.registrarCursosToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,6 +122,8 @@
         private System.Windows.Forms.Panel PanContenedorFormularios;
         private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarAlumnosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cursosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarCursosToolStripMenuItem;
     }
 }
 
